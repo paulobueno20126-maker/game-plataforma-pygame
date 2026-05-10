@@ -1,23 +1,25 @@
 # 🕹️ Jogo de Plataforma - Pygame Edition
 
-Este projeto é uma implementação de um jogo de plataforma desenvolvido em Python utilizando a biblioteca **Pygame**. O objetivo foi aplicar conceitos de física de jogos, inteligência artificial de patrulha e gestão de estados de jogo.
+Este projeto é uma implementação de um jogo de plataforma desenvolvido em Python utilizando a biblioteca **Pygame**. O foco principal foi aplicar conceitos de física, inteligência artificial e gestão de colisões.
+
+> **Nota:** O jogo original utilizava recursos visuais (imagens e sprites) provenientes do repositório interno do SENAI, os quais não se encontram disponíveis para distribuição pública. Esta versão utiliza formas geométricas para garantir a funcionalidade do código em qualquer ambiente.
 
 ## 🚀 Funcionalidades Implementadas
-- **[span_1](start_span)[span_2](start_span)Física Realista:** Sistema de gravidade e pulo com detecção de solo[span_1](end_span)[span_2](end_span).
-- **[span_3](start_span)Inteligência Artificial:** Inimigo com movimento de patrulha automático (vai e volta)[span_3](end_span).
-- **[span_4](start_span)[span_5](start_span)Gestão de Vida:** Sistema de colisões com cooldown de 1 segundo para evitar perda instantânea de vidas[span_4](end_span)[span_5](end_span).
-- **[span_6](start_span)Interface (HUD):** Exibição de vidas em tempo real e tela de Game Over[span_6](end_span).
+- **Física de Movimento:** Sistema de gravidade constante e lógica de pulo com detecção de solo.
+- **Inteligência Artificial (IA):** Inimigo com comportamento de patrulha automática (movimentação lateral contínua).
+- **Sistema de Vida e Dano:** Mecanismo de colisão com intervalo de segurança (cooldown) de 1 segundo para evitar perda instantânea de progresso.
+- **Interface de Utilizador (HUD):** Exibição de pontuação de vidas em tempo real e ecrã de encerramento (Game Over).
 
-## 🛠️ Tecnologias e Lógica
-- **Pygame:** Utilizado para o motor gráfico e manipulação de eventos de teclado.
-- **[span_7](start_span)POO (Programação Orientada a Objetos):** O inimigo foi estruturado numa classe para facilitar a manutenção e expansão[span_7](end_span).
-- **Retângulos de Colisão:** Uso de `pygame.Rect` para precisão matemática nas interações entre objetos.
+## 🛠️ Tecnologias e Conceitos
+- **Python 3:** Linguagem base do projeto.
+- **Pygame:** Biblioteca utilizada para renderização gráfica e controlo de eventos.
+- **POO (Programação Orientada a Objetos):** Utilização de classes para estruturar o inimigo e os seus comportamentos.
+- **Lógica de Colisão:** Implementação de retângulos matemáticos para interações precisas entre os elementos do jogo.
 
 ## 🎮 Como Jogar
-- **Setas Esquerda/Direita:** Movimentação.
+- **Setas Esquerda/Direita:** Movimentação do personagem.
 - **Seta Cima:** Pular.
-- **Objetivo:** Evitar o inimigo vermelho e sobreviver o máximo de tempo possível.
+- **Desafio:** Sobreviver ao contacto com o inimigo vermelho e evitar que as vidas cheguem a zero.
 
 ---
-*[span_8](start_span)[span_9](start_span)Este projeto reflete a evolução de um trabalho de curso de 10 páginas para uma versão otimizada e funcional[span_8](end_span)[span_9](end_span).*
-
+*Projeto desenvolvido como parte do portfólio técnico de Programação em Python.*
