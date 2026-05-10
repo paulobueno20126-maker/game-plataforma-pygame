@@ -1,16 +1,23 @@
-# 🕹️ Jogo de Plataforma - Projeto Final Pygame
+# 🕹️ Jogo de Plataforma - Pygame Edition
 
-Este é o meu projeto final do curso de Python, onde desenvolvi um jogo de plataforma completo utilizando a biblioteca **Pygame**.
+Este projeto é uma implementação de um jogo de plataforma desenvolvido em Python utilizando a biblioteca **Pygame**. O objetivo foi aplicar conceitos de física de jogos, inteligência artificial de patrulha e gestão de estados de jogo.
 
-## 🚀 Funcionalidades Técnicas
-- **[span_7](start_span)[span_8](start_span)Movimentação e Física:** Sistema de gravidade, pulo com cooldown e movimentação lateral[span_7](end_span)[span_8](end_span).
-- **[span_9](start_span)Inteligência Artificial Simples:** Inimigo voador que patrulha a área e reaparece ao sair da tela[span_9](end_span).
-- **[span_10](start_span)Câmera Dinâmica:** Sistema de câmera que segue o jogador pelo cenário[span_10](end_span).
-- **[span_11](start_span)Feedback Visual:** A imagem do jogador altera-se conforme recebe dano (colisões)[span_11](end_span).
+## 🚀 Funcionalidades Implementadas
+- **[span_1](start_span)[span_2](start_span)Física Realista:** Sistema de gravidade e pulo com detecção de solo[span_1](end_span)[span_2](end_span).
+- **[span_3](start_span)Inteligência Artificial:** Inimigo com movimento de patrulha automático (vai e volta)[span_3](end_span).
+- **[span_4](start_span)[span_5](start_span)Gestão de Vida:** Sistema de colisões com cooldown de 1 segundo para evitar perda instantânea de vidas[span_4](end_span)[span_5](end_span).
+- **[span_6](start_span)Interface (HUD):** Exibição de vidas em tempo real e tela de Game Over[span_6](end_span).
 
-## 🛠️ Tecnologias Utilizadas
-- Python 3
-- [span_12](start_span)Pygame (Sprites, Event Loop, Collision Detection)[span_12](end_span)
+## 🛠️ Tecnologias e Lógica
+- **Pygame:** Utilizado para o motor gráfico e manipulação de eventos de teclado.
+- **[span_7](start_span)POO (Programação Orientada a Objetos):** O inimigo foi estruturado numa classe para facilitar a manutenção e expansão[span_7](end_span).
+- **Retângulos de Colisão:** Uso de `pygame.Rect` para precisão matemática nas interações entre objetos.
 
-## 📝 Nota do Projeto
-O código completo foi desenvolvido em ambiente de aula. Este repositório contém a documentação técnica e os fragmentos principais da lógica de desenvolvimento.
+## 🎮 Como Jogar
+- **Setas Esquerda/Direita:** Movimentação.
+- **Seta Cima:** Pular.
+- **Objetivo:** Evitar o inimigo vermelho e sobreviver o máximo de tempo possível.
+
+---
+*[span_8](start_span)[span_9](start_span)Este projeto reflete a evolução de um trabalho de curso de 10 páginas para uma versão otimizada e funcional[span_8](end_span)[span_9](end_span).*
+
